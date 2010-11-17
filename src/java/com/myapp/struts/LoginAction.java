@@ -45,7 +45,9 @@ public class LoginAction extends org.apache.struts.action.Action {
             email == null ||
             name.equals("") ||
             email.indexOf("@") == -1){
+            formbean.setError();
             return mapping.findForward(FAILURE);
+
         }
         return mapping.findForward(SUCCESS);
     }
