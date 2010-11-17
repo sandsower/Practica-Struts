@@ -20,7 +20,10 @@
     </global-forwards>
 
     <action-mappings>
-        <action name="LoginForm" path="/login" scope="request" type="com.myapp.struts.LoginAction" validate="false"/>
+        <action name="LoginForm" path="/login" scope="request" type="com.myapp.struts.LoginAction" validate="false">
+            <forward name="success" path="/WEB-INF/success.jsp"/>
+            <forward name="failure" path="/login.jsp"/>
+        </action>
         <action path="/Welcome" forward="/welcomeStruts.jsp"/>
     </action-mappings>
     

@@ -11,11 +11,15 @@
 
 <html>
     <head>
+
+      <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login Form</title>
     </head>
     <body>
         <h1>Login Form</h1>
+
+        <html:form action="/login">
         <table border="0">
             <tbody>
                 <tr>
@@ -37,9 +41,6 @@
                 </tr>
             </tbody>
         </table>
-
-        <html:form action="/login">
-            <html:submit value="Login" />
         </html:form>
     </body>
 </html>
